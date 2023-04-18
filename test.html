@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+    <script type="text/javascript" src="js/script.js"></script>
+<body>
+    
+
+ <!-- Header and navigation -->
+<header>
+    <nav>
+        <a href="#" class="logo">Your Logo</a>
+        <ul class="main-menu">
+            <li><a href="#homepage">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Homepage -->
+<section id="homepage">
+    <div class="banner-container">
+        <img src="img/banner.jpg" alt="Banner" class="banner-image">
+        <div class="banner-text">
+            <h1>Welcome to Your Online Store</h1>
+            <p>Your introduction text...</p>
+        </div>
+    </div>
+        
+        <h2>Featured Products</h2>
+        <div style="display: flex;">
+            <div style="flex: 1;">
+                <img src="img/guimbarde.jpeg" alt="Jaw Harp" class="featured-product">
+                <h3>Jaw Harps</h3>
+            </div>
+            <div style="flex: 1;">
+                <img src="img/handpan.jpg" alt="Handpan" class="featured-product">
+                <h3>Handpans</h3>
+            </div>
+            <div style="flex: 1;">
+                <img src="img/tonguedrum.jpeg" alt="Tongue Drum" class="featured-product">
+                <h3>Tongue Drums</h3>
+            </div>
+        </div>
+
+        <div class="testimonials">
+          <div id="testimonial-slider" class="testimonial-slider">
+            <div class="testimonial">
+              <blockquote>
+                Testimonial 1
+              </blockquote>
+      <footer>Person 1</footer>
+       </div>
+    <div class="testimonial">
+      <blockquote>
+        Testimonial 2
+      </blockquote>
+      <footer>Person 2</footer>
+    </div>
+    <div class="testimonial">
+      <blockquote>
+        Testimonial 3
+      </blockquote>
+      <footer>Person 3</footer>
+    </div>
+    <!-- Add more testimonials here -->
+  </div>
+</div>
+
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter or follow us on social media for updates.</p>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Shop -->
+<section id="shop">
+    <h2>Shop</h2>
+    <div>
+        <label for="filter">Filter:</label>
+        <select id="filter" name="filter">
+            <option value="all">All</option>
+            <option value="jaw-harps">Jaw Harps</option>
+            <option value="handpans">Handpans</option>
+            <option value="tongue-drums">Tongue Drums</option>
+        </select>
+    </div>
+
+    <div style="display: flex; flex-wrap: wrap;">
+        <!-- Product 1 -->
+        <div style="flex: 1 0 25%; padding: 1rem;" data-category="jaw-harps">
+            <img src="product-1.jpg" alt="Product 1" style="width: 100%;">
+            <h3>Product 1</h3>
+            <p>Product description...</p>
+            <p>Price: $100</p>
+            <a href="product-1.html">View Details</a>
+        </div>
+
+        <!-- Product 2 -->
+       <div style="flex: 1 0 25%; padding: 1rem;" data-category="handpans">
+            <img src="product-2.jpg" alt="Product 2" style="width: 100%;">
+            <h3>Product 2</h3>
+            <p>Product description...</p>
+            <p>Price: $150</p>
+            <a href="product-2.html">View Details</a>
+        </div>
+
+        <!-- More products... -->
+
+    </div>
+</section>
+
+   <!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <p>
+                Your story, how you started crafting these instruments, and your connection to nature.
+            </p>
+            <p>
+                Additional details about your background, your passion for handmade instruments, and your commitment to quality craftsmanship.
+            </p>
+        </div>
+        <div style="flex: 1;">
+            <img src="workshop.jpg" alt="Workshop" style="width: 100%;">
+        </div>
+    </div>
+
+    <h3>Inspiration</h3>
+    <p>
+        Share information about the natural environment that inspires your creations, along with any interesting stories or anecdotes about your experiences in nature.
+    </p>
+    <div style="display: flex;">
+        <div style="flex: 1; padding: 1rem;">
+            <img src="nature-1.jpg" alt="Nature 1" style="width: 100%;">
+        </div>
+        <div style="flex: 1; padding: 1rem;">
+            <img src="nature-2.jpg" alt="Nature 2" style="width: 100%;">
+        </div>
+        <div style="flex: 1; padding: 1rem;">
+            <img src="nature-3.jpg" alt="Nature 3" style="width: 100%;">
+        </div>
+    </div>
+</section>
+
+   <!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or feedback, feel free to reach out to us using the form below or through our social media channels.</p>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <h3>Additional Contact Information</h3>
+    <p>Email: your-email@example.com</p>
+    <p>Phone: (123) 456-7890</p>
+
+    <h3>Follow Us on Social Media</h3>
+    <p>
+        <a href="https://www.facebook.com/yourpage">Facebook</a> |
+        <a href="https://www.instagram.com/yourprofile">Instagram</a> |
+        <a href="https://twitter.com/youraccount">Twitter</a>
+    </p>
+</section>
+
+    <!-- FAQ -->
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <dl>
+        <dt>Question 1: How long does it take to make a custom instrument?</dt>
+        <dd>Answer: It takes approximately 2-4 weeks to create a custom instrument, depending on the complexity of the design and the materials used.</dd>
+
+        <dt>Question 2: What is your return policy?</dt>
+        <dd>Answer: We accept returns for items in new and unused condition within 14 days of delivery. Please contact us before returning any items to receive further instructions.</dd>
+
+        <dt>Question 3: How can I track my order?</dt>
+        <dd>Answer: Once your order has been shipped, you will receive an email with tracking information. You can also log in to your account on our website to view the status of your order.</dd>
+
+        <!-- Add more questions and answers as needed -->
+    </dl>
+</section>
+
+    <!-- Blog -->
+<section id="blog">
+    <h2>Latest Blog Posts</h2>
+    <div style="display: flex; flex-wrap: wrap;">
+        <!-- Blog Post 1 -->
+        <div style="flex: 1 0 33%; padding: 1rem;">
+            <img src="blog-post-1.jpg" alt="Blog Post 1" style="width: 100%;">
+            <h3>Blog Post 1 Title</h3>
+            <p>Blog post 1 summary...</p>
+            <a href="blog-post-1.html">Read More</a>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div style="flex: 1 0 33%; padding: 1rem;">
+            <img src="blog-post-2.jpg" alt="Blog Post 2" style="width: 100%;">
+            <h3>Blog Post 2 Title</h3>
+            <p>Blog post 2 summary...</p>
+            <a href="blog-post-2.html">Read More</a>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div style="flex: 1 0 33%; padding: 1rem;">
+            <img src="blog-post-3.jpg" alt="Blog Post 3" style="width: 100%;">
+            <h3>Blog Post 3 Title</h3>
+            <p>Blog post 3 summary...</p>
+            <a href="blog-post-3.html">Read More</a>
+        </div>
+
+        <!-- More blog posts... -->
+
+    </div>
+    <a href="blog.html">View All Blog Posts</a>
+</section>
+
+   <!-- Footer -->
+<footer style="background-color: #333; color: #fff; padding: 2rem;">
+    <div style="display: flex; justify-content: space-between;">
+        <!-- Legal Information -->
+        <div>
+            <h4>Legal Information</h4>
+            <ul>
+                <li><a href="terms-and-conditions.html" style="color: #fff;">Terms and Conditions</a></li>
+                <li><a href="privacy-policy.html" style="color: #fff;">Privacy Policy</a></li>
+                <li><a href="return-policy.html" style="color: #fff;">Return Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Copyright Notice -->
+        <div>
+            <h4>Copyright</h4>
+            <p>&copy; 2023 Your Business Name. All rights reserved.</p>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+            <h4>Contact Information</h4>
+            <p>Email: your-email@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/yourpage" style="color: #fff;">Facebook</a> |
+            <a href="https://www.instagram.com/yourprofile" style="color: #fff;">Instagram</a> |
+            <a href="https://twitter.com/youraccount" style="color: #fff;">Twitter</a>
+        </div>
+
+        <!-- Site Map (optional) -->
+        <div>
+            <h4>Site Map</h4>
+            <ul>
+                <li><a href="homepage.html" style="color: #fff;">Home</a></li>
+                <li><a href="shop.html" style="color: #fff;">Shop</a></li>
+                <li><a href="about.html" style="color: #fff;">About</a></li>
+                <li><a href="contact.html" style="color: #fff;">Contact</a></li>
+                <li><a href="faq.html" style="color: #fff;">FAQ</a></li>
+                <li><a href="blog.html" style="color: #fff;">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
